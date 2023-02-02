@@ -1,24 +1,42 @@
-import {motion} from "framer-motion"
+import { motion } from 'framer-motion'
 import TextField from '@mui/joy/TextField'
+import FormControl from '@mui/joy/FormControl'
+import FormLabel from '@mui/joy/FormLabel'
+import FormHelperText from '@mui/joy/FormHelperText'
+import Input from '@mui/joy/Input'
 import EmailIcon from '@mui/icons-material/Email'
 
 export default function Jobs() {
   return (
     <div className="container min-w-[100%] px-4">
       <div className="flex text-center text-6xl mb-7 w-[100%] items-center justify-center">
-        <TextField
-            required
-            className="mt-7 bg-white w-[40%]"
+        <FormControl required size="md" color="primary">
+          <Input
             placeholder="Search Category"
+            startDecorator={<EmailIcon />}
+            className="mt-7 bg-white w-[40%]"
+            name="Name"
+            type="tel"
+            autoComplete="on"
+            autoFocus
           />
+        </FormControl>
+        {/* <TextField
+          className="mt-7 bg-white w-[40%]"
+          placeholder="Search Category"
+        /> */}
       </div>
 
       <div className="grid justify-items-center">
         <div className="inline-grid grid-cols-3 gap-4 ">
           <motion.div
-          initial={{ opacity: 0, translateX: -50}}
-          whileInView={{ opacity: 1, translateX: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateX: -50 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -54,9 +72,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateY: -50}}
-          whileInView={{ opacity: 1, translateY: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateY: -50 }}
+            whileInView={{
+              opacity: 1,
+              translateY: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -80,9 +102,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateX: 50}}
-          whileInView={{ opacity: 1, translateX: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateX: 50 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -122,9 +148,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateX: -50}}
-          whileInView={{ opacity: 1, translateX: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateX: -50 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -195,9 +225,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateY: 50}}
-          whileInView={{ opacity: 1, translateY: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{
+              opacity: 1,
+              translateY: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -223,15 +257,21 @@ export default function Jobs() {
                     />
                   </svg>
                 </div>
-                <p className="text-center font-bold text-2xl">Finance Manager</p>
+                <p className="text-center font-bold text-2xl">
+                  Finance Manager
+                </p>
               </div>
             </div>
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateX: 50}}
-          whileInView={{ opacity: 1, translateX: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateX: 50 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -267,9 +307,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateX: -50}}
-          whileInView={{ opacity: 1, translateX: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateX: -50 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -305,9 +349,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateY: -50}}
-          whileInView={{ opacity: 1, translateY: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateY: -50 }}
+            whileInView={{
+              opacity: 1,
+              translateY: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -331,9 +379,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateX: 50}}
-          whileInView={{ opacity: 1, translateX: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateX: 50 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -373,9 +425,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateX: -50}}
-          whileInView={{ opacity: 1, translateX: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateX: -50 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -446,9 +502,13 @@ export default function Jobs() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateY: 50}}
-          whileInView={{ opacity: 1, translateY: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{
+              opacity: 1,
+              translateY: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -474,15 +534,21 @@ export default function Jobs() {
                     />
                   </svg>
                 </div>
-                <p className="text-center font-bold text-2xl">Finance Manager</p>
+                <p className="text-center font-bold text-2xl">
+                  Finance Manager
+                </p>
               </div>
             </div>
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, translateX: 50}}
-          whileInView={{ opacity: 1, translateX: 0, transition: {delay: 0.2}}}
-          whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1}}
+            initial={{ opacity: 0, translateX: 50 }}
+            whileInView={{
+              opacity: 1,
+              translateX: 0,
+              transition: { delay: 0.2 },
+            }}
+            whileHover={{ opacity: 1, translateY: -15, scale: 1.2, zIndex: 1 }}
           >
             <div className="box-border h-32 w-auto p-2 border-4 rounded-lg bg-gray-100 shadow-sm">
               <div className="mx-auto flex items-center mt-[4%]">
@@ -519,10 +585,10 @@ export default function Jobs() {
         </div>
       </div>
       <motion.div
-          initial={{ opacity: 0, scale: 0.5}}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="mt-11 grid justify-items-center "
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="mt-11 grid justify-items-center "
       >
         <button className=" w-48 h-16 bg-violet-700 rounded-lg text-white text-lg font-bold">
           See All

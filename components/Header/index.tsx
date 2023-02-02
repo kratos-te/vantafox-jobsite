@@ -11,8 +11,6 @@ export default function Header() {
 
   const [loginOpened, setLoginOpen] = useState<boolean>(false)
   const [signupOpened, setSignupOpen] = useState<boolean>(false)
- 
-
 
   return (
     <header>
